@@ -104,7 +104,7 @@ const Layout=(props)=>{
         <Head>
             <link rel="shortcut icon" href="/static/f.ico" type="image/x-icon"/>
             {/* evita la duplicidad y la url principal de tu page */}
-            <link rel="canonical" href="https://juanfalconcodigo.github.io/Portfolio/" />
+            <link rel="canonical" href="https://juanfalcon.vercel.app/" />
             <title>Falcón</title>
             {/* <style jsx global>{normalize}</style> */}
             
