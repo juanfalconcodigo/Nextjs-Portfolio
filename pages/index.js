@@ -1,65 +1,92 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import React from 'react';
+import {Layout} from '../components/layout';
+import styled from '@emotion/styled';
+import Typed from 'react-typed';
+import Button from '../components/iu/Button';
+import Link from 'next/link';
+
+const HomeContainer=styled.div`
+max-width:960px;
+width:100%;
+margin:auto;
+display:grid;
+grid-template-areas:'title img' 'description .';
+grid-template-columns:2fr 1fr;
+grid-template-rows:250px 300px;
+@media(max-width:768px){
+  grid-template-areas:'title' 'img' 'description';
+  grid-template-columns:auto;
+  grid-template-rows:150px 300px auto;
+} 
+`;
+const Title=styled.div`
+span{
+  font-size:4rem;
+  color:#867BFB;
+}
+`;
+const PhotoProfile=styled.div`
+display:flex;
+justify-content:center;
+align-items:center;
+div{
+  width:200px;
+  height: 200px;
+  border:10px solid black;
+  border-radius:50%;
+  overflow: hidden;
+}
+img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  /* vertical-align:top; */
+}
+`;
+
+const Description=styled.section`
+p{
+  font-size:2rem;
+}
+`;
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+    <>
+    <Layout>
+       <HomeContainer>
+         <Title>
+           <h1>Juan Falcón <u><i>Web Developer</i></u></h1>
+                <Typed
+                strings={[
+                    'Angular 10',
+                    'Reactjs',
+                    'Nodejs',
+                     'Sql']}
+                    typeSpeed={40}
+                    backSpeed={50}
+                    loop >
+                    <span/>
+                </Typed>
+          </Title>
+         <PhotoProfile>
+           <div>
+             <img src="https://res.cloudinary.com/dbxg3ojl8/image/upload/v1596826886/falcon_o9hvs6.jpg" alt="image user"/>
+           </div>
+         </PhotoProfile>
+         <Description>
+           <p>
+           Me considero una persona analítica,creativa,perseverante, investigadora y apasionada 
+           por el mundo de las tecnologías Web , en el cual en los años de mi formación académica 
+           me llevo a afrontar diversos retos, esto hicieron de mi mejorar cada vez mas como programador 
+           tanto en el lado front-end como back-end con las diversas tecnologías mas demandadas.
+           </p>
+           <Button>
+             <Link href="/portfolio"><a>Ver más</a></Link>
+           </Button>
+          </Description>
+       </HomeContainer>
+    </Layout>
+    </>
   )
 }
