@@ -103,6 +103,8 @@ const Layout=(props)=>{
         `}/>
         <Head>
             <link rel="shortcut icon" href="/static/f.ico" type="image/x-icon"/>
+            {/*Verificación de site de google */}
+            <meta name="google-site-verification" content="rr1m6EDlDxDEPBX2R2968VKaomk59cAPPNczPOF7afI" />
             {/* evita la duplicidad y la url principal de tu page */}
             <link rel="canonical" href="https://juanfalcon.vercel.app/" />
             <title>Falcón</title>
