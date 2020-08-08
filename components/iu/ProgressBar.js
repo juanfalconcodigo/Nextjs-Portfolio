@@ -10,6 +10,7 @@ const ProgressBarContainer=styled.div`
     height: 5px;
     width:0%;
     background-color: #9034AA;
+    z-index:997;
 `;
 
 const ProgressBar=()=>{

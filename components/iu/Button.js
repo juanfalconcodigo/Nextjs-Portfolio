@@ -4,19 +4,19 @@ import styled from '@emotion/styled';
 const ButtonContainer=styled.button`
 display:inline-block;
 padding:1rem;
-background-color:black;
+background-color:${({background})=>background||'black'};
 border:none;
 font-size:2rem;
 a{
-    color:white;
+color:${({color})=>color||'white'};
 }
 `;
 
-const Button=(props)=>{
+const Button=({color,background,children})=>{
     return(
         <>
-        <ButtonContainer>
-             {props.children}
+        <ButtonContainer color={color} background={background}>
+             {children}
         </ButtonContainer>
         </>
     )

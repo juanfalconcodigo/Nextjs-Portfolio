@@ -20,6 +20,9 @@ min-height:100vh;
 const Main=styled.div`
 grid-area:main;
 padding:4rem 0;
+max-width:960px;
+width:100%;
+margin:auto;
 display:flex;
 justify-content:center;
 align-items:center;
