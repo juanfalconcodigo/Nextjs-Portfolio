@@ -4,6 +4,7 @@ import styled from '@emotion/styled';
 import Typed from 'react-typed';
 import Button from '../components/iu/Button';
 import Link from 'next/link';
+import { animationFadeIn } from '../components/animation/';
 
 const HomeContainer=styled.div`
 max-width:960px;
@@ -13,6 +14,7 @@ display:grid;
 grid-template-areas:'title img' 'description .';
 grid-template-columns:2fr 1fr;
 grid-template-rows:250px 300px;
+animation:${animationFadeIn} 1s ease-in-out;
 @media(max-width:768px){
   grid-template-areas:'title' 'img' 'description';
   grid-template-columns:auto;
@@ -49,6 +51,8 @@ p{
   font-size:2rem;
 }
 `;
+
+
 
 export default function Home() {
   return (

@@ -3,11 +3,13 @@ import Link from 'next/link';
 import {Layout} from '../components/layout';
 import { Slider } from '../components/iu';
 import styled from '@emotion/styled';
+import { animationFadeIn } from '../components/animation';
 
 const PortfolioContainer=styled.div`
 max-width:960px;
 width:100%;
 margin:auto;
+animation:${animationFadeIn} 1s ease-in-out;
 h3{
   font-size:2.5rem;
   font-family: 'Montserrat',sans-serif;
@@ -26,7 +28,7 @@ const Portfolio=()=>{
           <PortfolioContainer>
               <h3>Proyectos desarrollados:</h3>
               <p>
-                Que bueno que estas en esta sección ,te muestro algunos de los proyectos que eh desarollado
+                Que bueno que estas en esta sección ,te muestro algunos de los proyectos que eh desarrollado
                 a lo largo de mi etapa de estudiante y como de autodidacta ,ya sea con documentacion oficial 
                 o con cursos en línea para complementar mi formación académica.
                 <br/>

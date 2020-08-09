@@ -27,6 +27,7 @@ img{
     vertical-align:top;
 }
 div{
+  cursor: pointer;
   position: absolute;
   top:0;
   bottom: 0;
@@ -68,10 +69,10 @@ const Slider=()=>{
                         <img src={e.photo} alt="Image"/>
                         <div>
                                 <Button color={'black'} background={'white'}>
-                                   <a href={e.demo} target="_blanck">Demo</a>
+                                   <a href={e.demo} target="_blank">Demo</a>
                                 </Button>
                                 <Button>
-                                   <a href={e.github} target="_blanck">Github</a>
+                                   <a href={e.github} target="_blank">Github</a>
                                 </Button>
                         </div>
                     </ItemList>
