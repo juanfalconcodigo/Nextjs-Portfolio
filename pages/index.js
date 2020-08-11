@@ -59,8 +59,8 @@ export default function Home() {
     <>
     <Layout>
        <HomeContainer>
-         <Title>
-           <h1>Juan Falcón <u><i>Web Developer</i></u></h1>
+         <Title itemscope itemtype="https://schema.org/Person">
+           <h1 itemProp="name">Juan Falcón <span itemProp="jobTitle"><u><i>Web Developer</i></u></span></h1>
                 <Typed
                 strings={[
                     'Angular 10',
@@ -73,13 +73,13 @@ export default function Home() {
                     <span/>
                 </Typed>
           </Title>
-         <PhotoProfile>
+         <PhotoProfile itemscope itemtype="https://schema.org/Person">
            <div>
-             <img src="https://res.cloudinary.com/dbxg3ojl8/image/upload/v1596826886/falcon_o9hvs6.jpg" alt="image user"/>
+             <img itemProp="image" src="https://res.cloudinary.com/dbxg3ojl8/image/upload/v1596826886/falcon_o9hvs6.jpg" alt="image user"/>
            </div>
          </PhotoProfile>
-         <Description>
-           <p>
+         <Description itemscope itemtype="https://schema.org/Person">
+           <p itemProp="description">
            Me considero una persona analítica,creativa,perseverante, investigadora y apasionada 
            por el mundo de las tecnologías Web , en el cual en los años de mi formación académica 
            me llevo a afrontar diversos retos, esto hicieron de mi mejorar cada vez mas como programador 
