@@ -59,7 +59,7 @@ export default function Home() {
     <>
     <Layout>
        <HomeContainer>
-         <Title itemscope itemtype="https://schema.org/Person">
+         <Title itemScope itemType="https://schema.org/Person">
            <h1 itemProp="name">Juan Falcón <span itemProp="jobTitle"><u><i>Web Developer</i></u></span></h1>
                 <Typed
                 strings={[
@@ -73,12 +73,12 @@ export default function Home() {
                     <span/>
                 </Typed>
           </Title>
-         <PhotoProfile itemscope itemtype="https://schema.org/Person">
+         <PhotoProfile itemScope itemtype="https://schema.org/Person">
            <div>
              <img itemProp="image" src="https://res.cloudinary.com/dbxg3ojl8/image/upload/v1596826886/falcon_o9hvs6.jpg" alt="image user"/>
            </div>
          </PhotoProfile>
-         <Description itemscope itemtype="https://schema.org/Person">
+         <Description itemScope itemType="https://schema.org/Person">
            <p itemProp="description">
            Me considero una persona analítica,creativa,perseverante, investigadora y apasionada 
            por el mundo de las tecnologías Web , en el cual en los años de mi formación académica 

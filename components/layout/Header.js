@@ -33,7 +33,7 @@ const Header=()=>{
     return (
         <>
         <HeaderContainer>
-          <div itemscope itemtype="https://schema.org/Person">
+          <div itemScope itemType="https://schema.org/Person">
              <p itemProp="author"><Link href="/"><a>&lt;Juan Falcón/&gt;</a></Link></p>
           </div> 
         </HeaderContainer>
