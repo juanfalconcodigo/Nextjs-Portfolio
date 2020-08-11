@@ -78,6 +78,7 @@ const Navbar=({show})=>{
                             <li><Link href="/"><a>About</a></Link> </li>
                             <li><Link href="/skill"><a>Skills</a></Link> </li>
                             <li><Link href="/portfolio"><a>Portfolio</a></Link> </li>
+                            <li><Link href="/contact"><a>Contact</a></Link> </li>
                         </ul>
                     </LinkPages>
                     <Information>
