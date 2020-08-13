@@ -42,8 +42,8 @@ const Contact=()=>{
                   compartir mis conocimientos con la comunidad y aprender de ellos mediante su feedback.
               </h3>
               <Social itemScope itemType="https://schema.org/Person">
-                  <li itemProp="contactPoint"><span>Linkedin</span>  <a target="_blanck" href="https://www.linkedin.com/in/juan-diego-falc%C3%B3n-c%C3%B3rdova-4699301a1/"><FontAwesomeIcon icon={faLinkedin} style={{width:'30px',color:'black'}}/></a></li>
-                  <li itemProp="memberOf"><span>Github</span> <a target="_blanck" href="https://github.com/juanfalconcodigo"><FontAwesomeIcon icon={faGithub} style={{width:'30px',color:'black'}}/></a></li>
+                  <li itemProp="contactPoint"><span>Linkedin</span>  <a target="_blank" href="https://www.linkedin.com/in/juan-diego-falc%C3%B3n-c%C3%B3rdova-4699301a1/"><FontAwesomeIcon icon={faLinkedin} style={{width:'30px',color:'black'}}/></a></li>
+                  <li itemProp="memberOf"><span>Github</span> <a target="_blank" href="https://github.com/juanfalconcodigo"><FontAwesomeIcon icon={faGithub} style={{width:'30px',color:'black'}}/></a></li>
                   <li itemProp="email"> <span>Gmail</span> <a href="mailto:juancodigo23@gmail.com"><FontAwesomeIcon icon={faGoogle} style={{width:'30px',color:'black'}}/></a></li>
               </Social>
               </ContactContainer>
