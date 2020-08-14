@@ -28,8 +28,8 @@ const Footer=()=>{
         <FooterContainer>
             <Container>
               <ul>
-                  <li><a target="_blanck" href="https://www.linkedin.com/in/juan-diego-falc%C3%B3n-c%C3%B3rdova-4699301a1/"><FontAwesomeIcon icon={faLinkedin} style={{width:'40px',color:'black'}}/></a></li>
-                  <li><a target="_blanck" href="https://github.com/juanfalconcodigo"><FontAwesomeIcon icon={faGithub} style={{width:'40px',color:'black'}}/></a></li>
+                  <li><a target="_blank" href="https://www.linkedin.com/in/juan-diego-falc%C3%B3n-c%C3%B3rdova-4699301a1/"><FontAwesomeIcon icon={faLinkedin} style={{width:'40px',color:'black'}}/></a></li>
+                  <li><a target="_blank" href="https://github.com/juanfalconcodigo"><FontAwesomeIcon icon={faGithub} style={{width:'40px',color:'black'}}/></a></li>
               </ul>
             </Container>   
         </FooterContainer>
