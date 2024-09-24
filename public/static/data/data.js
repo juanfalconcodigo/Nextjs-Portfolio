@@ -1,4 +1,14 @@
 const data = [{
+        photo: 'https://res.cloudinary.com/dbxg3ojl8/image/upload/v1727200828/INTERVIEW-ANGULAR-MUSIC_yzl8eg.png',
+        demo: 'https://juanfalconcodigo.github.io/MusicApp-Angular-Signals/',
+        github: 'https://github.com/juanfalconcodigo/MusicApp-Angular-Signals'
+    },
+    {
+        photo: 'https://res.cloudinary.com/dbxg3ojl8/image/upload/v1727200822/INTERVIEW-ANGULAR-GRAPHQL_zk8sqw.png',
+        demo: 'https://juanfalconcodigo.github.io/InterviewProjectFractalUp/',
+        github: 'https://github.com/juanfalconcodigo/InterviewProjectFractalUp'
+    },
+    {
         photo: 'https://res.cloudinary.com/dbxg3ojl8/image/upload/v1580798824/angular1_rdvbsu.png',
         demo: 'https://system-tecsup.firebaseapp.com/#/login',
         github: 'https://github.com/juanfalconcodigo/ProyectoFrontTecsup'

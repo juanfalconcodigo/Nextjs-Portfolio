@@ -1,4 +1,4 @@
-const { keyframes } = require("@emotion/core");
+const { keyframes } = require("@emotion/react");
 
 const animationFadeIn = keyframes `
 0%{

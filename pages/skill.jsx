@@ -12,6 +12,12 @@ max-width:960px;
 width:100%;
 margin:auto;
 animation:${animationFadeIn} 1s ease-in-out;
+p{
+    font-size:2rem;
+    @media(max-width:768px){
+    font-size:1.8rem;
+    } 
+}
 `;
 const GridSkill=styled.ul`
 margin-top:4rem;
@@ -78,13 +84,12 @@ const Skill=()=>{
             <SkillContainer>
                    <h1>Mis conocimientos:</h1>
                    <p>
-                       En esta sección doy a conocer mis conocimientos que actualmento poseo , la 
+                       En esta sección doy a conocer mis conocimientos que actualmento poseo, la 
                        cual lo eh adquirido en mi formación académica.
-                       <br/><br/>
-                       Actualmente me sigo formando academicamente 🤵,reforzando el conocimiento adquirido y aprendiendo 
+                       Actualmente me sigo formando academicamente 🤵, reforzando el conocimiento adquirido y aprendiendo 
                        nuevas tecnologías en este tan cambiante y emocionante mundo de la tecnología 💻.
                    </p>
-                   <span>!!!Por cierto tengo un aprecio especial por <a href="https://angular.io/" target="_blank">Angular 💓</a> .</span>
+                   <p>!!!Por cierto tengo un aprecio especial por <a href="https://angular.io/" target="_blank">Angular 💓</a> .</p>
 
                    <GridSkill>
                        {skills.map((e,i)=>(

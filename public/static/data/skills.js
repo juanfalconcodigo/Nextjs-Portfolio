@@ -92,8 +92,12 @@ const skills = [{
         name: 'Redux',
         photo: 'https://res.cloudinary.com/dbxg3ojl8/image/upload/v1596996851/redux_xxpllx.png',
         url: 'https://es.redux.js.org/'
+    },
+    {
+        name: 'Tailwindcss',
+        photo: 'https://juanfalconcodigo.github.io/Portfolio/assets/img/TAILWINDCSS.png',
+        url: 'https://tailwindcss.com/'
     }
-
 ];
 
 export default skills;

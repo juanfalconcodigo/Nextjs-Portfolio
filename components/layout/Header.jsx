@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import Link from 'next/link';
 
-const HeaderContainer=styled.header`
+const HeaderContainer = styled.header`
 grid-area:header;
 box-shadow: 0 5px 5px -5px #333;
 div{
@@ -29,14 +29,14 @@ p{
 }
 `;
 
-const Header=()=>{
+const Header = () => {
     return (
         <>
-        <HeaderContainer>
-          <div itemScope itemType="https://schema.org/Person">
-             <p itemProp="author"><Link href="/"><a>&lt;Juan Falcón/&gt;</a></Link></p>
-          </div> 
-        </HeaderContainer>
+            <HeaderContainer>
+                <div itemScope itemType="https://schema.org/Person">
+                    <p itemProp="author"><Link href="/">&lt;Juan Falcón/&gt;</Link></p>
+                </div>
+            </HeaderContainer>
         </>
     )
 }

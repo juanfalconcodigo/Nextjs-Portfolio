@@ -1,6 +1,6 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
-import {Global,css} from '@emotion/core';
+import { Global, css } from '@emotion/react';
 import styled from '@emotion/styled';
 import Navbar from './Navbar';
 import HamburgerComponent from '../iu/Hamburger';
@@ -8,7 +8,7 @@ import Footer from './Footer';
 import Header from './Header';
 import ProgressBar from '../iu/ProgressBar';
 
-const Container=styled.div`
+const Container = styled.div`
 display:grid;
 grid-template-areas:'header' 'main' 'footer';
 grid-template-columns:auto;
@@ -17,7 +17,7 @@ width:100%;
 min-height:100vh;
 `;
 
-const Main=styled.div`
+const Main = styled.div`
 grid-area:main;
 padding:4rem 0;
 max-width:960px;
@@ -31,22 +31,22 @@ align-items:center;
 } 
 `;
 
-const HamburgerStyled = styled.div `
+const HamburgerStyled = styled.div`
 position:fixed;
 right:3vw;
 bottom:3vw;
 z-index:999;
 `;
 
-const Layout=(props)=>{
-    const [show,setShow]=useState(true);
-    const handleChangeShow=(value)=>{
+const Layout = (props) => {
+    const [show, setShow] = useState(true);
+    const handleChangeShow = (value) => {
         setShow(value);
     }
 
     return (
         <>
-        <Global styles={css`
+            <Global styles={css`
         html{
             font-size:62.5%;
             box-sizing:border-box;
@@ -85,6 +85,11 @@ const Layout=(props)=>{
         img{
             max-width:100%;
         }
+        p{
+            font-family: "Lexend Deca", sans-serif;
+            font-weight:300;
+            line-height: 32px;
+        }
         /* para el scroll */
 
         body::-webkit-scrollbar-track {
@@ -103,40 +108,36 @@ const Layout=(props)=>{
           background-color: black;
         }
  
-        `}/>
-        <Head>
-            <link rel="shortcut icon" href="/static/f.ico" type="image/x-icon"/>
-            {/*Verificación de site de google */}
-            <meta name="google-site-verification" content="rr1m6EDlDxDEPBX2R2968VKaomk59cAPPNczPOF7afI" />
-            {/* evita la duplicidad y la url principal de tu page */}
-            <link rel="canonical" href="https://juanfalcon.vercel.app/" />
-            <title>Falcón</title>
-            {/* <style jsx global>{normalize}</style> */}
-            
-            {/* para el seo */}
-            <meta name="description" content="Portafolio de Juan Diego Falcón Córdova desarrollador web front end y back end" />
-            <meta name="author" content="Juan Falcón" />
-            <meta name="keywords" content="front end developer, fullstack,Juan Falcón,back end developer,web developer,portafolio,desarrollador angular,reactjs" />
-            <meta name="copyright" content="Juan Falcón" />
-            <meta name="robots" content="index,follow" />
-            {/* styles */}
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossOrigin="anonymous" />
-            <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet"/>
-            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet"></link>
-        </Head>
+        `} />
+            <Head>
+                <link rel="shortcut icon" href="/static/f.ico" type="image/x-icon" />
+                {/*Verificación de site de google */}
+                <meta name="google-site-verification" content="rr1m6EDlDxDEPBX2R2968VKaomk59cAPPNczPOF7afI" />
+                {/* evita la duplicidad y la url principal de tu page */}
+                <link rel="canonical" href="https://juanfalcon.vercel.app/" />
+                <title>Falcón</title>
+                {/* <style jsx global>{normalize}</style> */}
+
+                {/* para el seo */}
+                <meta name="description" content="Portafolio de Juan Diego Falcón Córdova desarrollador web front end y back end" />
+                <meta name="author" content="Juan Falcón" />
+                <meta name="keywords" content="front end developer, fullstack,Juan Falcón,back end developer,web developer,portafolio,desarrollador angular,reactjs" />
+                <meta name="copyright" content="Juan Falcón" />
+                <meta name="robots" content="index,follow" />
+            </Head>
             <Container show={show}>
                 <HamburgerStyled>
-                    <HamburgerComponent show={show} handleChangeShow={handleChangeShow}/>
-                </HamburgerStyled>  
-                <Navbar show={show}/>
-                <ProgressBar/>
-                <Header/>
+                    <HamburgerComponent show={show} handleChangeShow={handleChangeShow} />
+                </HamburgerStyled>
+                <Navbar show={show} />
+                <ProgressBar />
+                <Header />
                 <Main>
                     <main>
-                    {props.children}
+                        {props.children}
                     </main>
                 </Main>
-                <Footer/>
+                <Footer />
             </Container>
         </>
     )
