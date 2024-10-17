@@ -4,6 +4,11 @@ const data = [{
         github: 'https://github.com/juanfalconcodigo/MusicApp-Angular-Signals'
     },
     {
+        photo: 'https://res.cloudinary.com/dbxg3ojl8/image/upload/v1729187102/llamafood-image_vgdizy.png',
+        demo: 'https://llamafood.com/home',
+        github: 'https://github.com/juanfalconcodigo'
+    },
+    {
         photo: 'https://res.cloudinary.com/dbxg3ojl8/image/upload/v1727200822/INTERVIEW-ANGULAR-GRAPHQL_zk8sqw.png',
         demo: 'https://juanfalconcodigo.github.io/InterviewProjectFractalUp/',
         github: 'https://github.com/juanfalconcodigo/InterviewProjectFractalUp'
